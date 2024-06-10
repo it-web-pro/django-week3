@@ -291,6 +291,10 @@ Running migrations:
 - blog_comment
 ```
 
+**TIPS: ประวัติการ apply migrations จะถูกบันทึกในตาราง `django_migrations`**
+
+ลองเปิดเข้าไปดูสิว่ามี record การ apply `blogs/migrations/0001_initial.py` และ `blogs/migrations/0002_blog_comment.py` ไหม
+
 ## Model fields ที่ใช้บ่อยๆ
 [Doc](https://docs.djangoproject.com/en/5.0/ref/models/fields/)
 
@@ -360,6 +364,3 @@ class Student(models.Model):
         return self.year_in_school in {self.JUNIOR, self.SENIOR}
 ```
 - db_index: ถ้ามีค่าเป็น True คือจะสร้าง index ใน database สำหรับ column นี้
-
-## Exercises
-
