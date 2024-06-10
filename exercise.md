@@ -1,4 +1,4 @@
-# แบบฝึกหัด WEEK 3 - Django Model
+# WEEK 3 Exercises - Django Model
 
 1. สร้าง project ใหม่ชื่อ "myshop" (สร้าง vitual environment ใหม่ด้วย)
 2. สร้าง app ชื่อ shop และทำการตั้งค่าใน `settings.py`
