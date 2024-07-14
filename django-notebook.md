@@ -49,3 +49,5 @@ from blogs.models import Blog
 for blog in Blog.objects.all():
     print(blog)
 ```
+
+8. ลองเพิ่มข้อมูลเข้าไปในทุกตารางเลยครับ จากนั้นลอง query ข้อมูลดู
