@@ -87,7 +87,7 @@
     os.environ["DJANGO_ALLOW_ASYNC_UNSAFE"] = "true"
     ```
 
-    ![create_ipynb](/images/firstpng)
+    ![create_ipynb](/images/first.png)
 
 
 11. สามารถทำการ import models และ query ข้อมูลโดยใช้ API ของ Django ได้เลย
