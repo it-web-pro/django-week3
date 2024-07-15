@@ -6,17 +6,17 @@
 
     สำหรับ Windows
     ```sh
-        python -m venv myvenv --python=python3.11
+    python -m venv myvenv --python=python3.11
     ```
 
     สำหรับ MAC OS
     ```sh
-        python3.11 -m venv myvenv
+    python3.11 -m venv myvenv
     ```
 
     activate และติดตั้ง Django และ psycopg2
     ```sh
-        pip install django psycopg2-binary
+    pip install django psycopg2-binary
     ```
 
 2. สร้าง project Django
