@@ -11,7 +11,7 @@
 
     สำหรับ MAC OS
     ```sh
-    python3.11 -m venv myvenv
+    python3 -m venv myvenv4 python=python3.11
     ```
 
     activate และติดตั้ง Django และ psycopg2
