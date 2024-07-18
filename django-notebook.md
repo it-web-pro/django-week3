@@ -6,7 +6,7 @@
 
     สำหรับ Windows
     ```sh
-    python -m venv myvenv --python=python3.11
+    py-m venv myvenv python=python3.11
     ```
 
     สำหรับ MAC OS
