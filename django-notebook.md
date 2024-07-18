@@ -30,10 +30,7 @@
 4. จากนั้นให้แก้ไข version ของ package ภายใน jupyter และ notebook
 
     ```sh
-    pip install ipython==8.25.0
-    pip install jupyter_server==2.14.1
-    pip install jupyterlab==4.2.2
-    pip install jupyterlab_server==2.27.2
+    pip install ipython==8.25.0 jupyter_server==2.14.1 jupyterlab==4.2.2 jupyterlab_server==2.27.2
     ```
 
     แก้ไข version notebook
