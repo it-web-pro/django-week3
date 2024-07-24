@@ -6,12 +6,12 @@
 
     สำหรับ Windows
     ```sh
-    py -m venv myvenv python=python3.11
+    py -m venv myvenv
     ```
 
     สำหรับ MAC OS
     ```sh
-    python3 -m venv myvenv4 python=python3.11
+    python3 -m venv myvenv4
     ```
 
     activate และติดตั้ง Django และ psycopg2
