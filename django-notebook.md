@@ -70,24 +70,24 @@
 ซึ่งจะเปิด Jupyter Notebook ขึ้นมาใน Web Browser
 
 8. เข้าไปที่ folder `notebooks`
+   
+    ![notebook_8](https://github.com/it-web-pro/django-week3/blob/main/images/notebook_8.png?raw=true)
+    
+    สร้าง ไฟล์ ipynb สำหรับใช้กับ project django
+   
+    [![create_ipynb](/images/create_ipynb.png)](https://github.com/it-web-pro/django-week3/blob/main/images/create_ipynb.png?raw=true)
 
-    ![notebook_8](/images/notebook_8.png)
-
-9. สร้าง ไฟล์ ipynb สำหรับใช้กับ project django
-
-    ![create_ipynb](/images/create_ipynb.png)
-
-10. จากนั้นใน Cell แรกของไฟล์ Notebook เพิ่ม code นี้ลงไป
+9. จากนั้นใน Cell แรกของไฟล์ Notebook เพิ่ม code นี้ลงไป
 
     ```python
     import os
     os.environ["DJANGO_ALLOW_ASYNC_UNSAFE"] = "true"
     ```
+    ![/images/first.png](https://github.com/it-web-pro/django-week3/blob/main/images/first.png?raw=true)
 
-    ![create_ipynb](/images/first.png)
 
 
-11. สามารถทำการ import models และ query ข้อมูลโดยใช้ API ของ Django ได้เลย
+10. สามารถทำการ import models และ query ข้อมูลโดยใช้ API ของ Django ได้เลย
 
 ```python
 from blogs.models import Blog
