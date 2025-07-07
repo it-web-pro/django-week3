@@ -4,7 +4,7 @@
 
 ด้านล่างนี้คือ ER diagram ของ web application blog posts
 
-![ERD](./images/WEEK3-ERD.png)
+![ERD](./images/ERD-week3.png)
 
 เรามาเริ่มจากการสร้าง project Django ใหม่กันก่อนนะครับ
 
@@ -56,7 +56,7 @@ OR
 
 จากนั้นไปทำการตั้งค่าใน `myblogs/settings.py`
 
-**HINT: ไปสร้่าง DB ใน postgres ก่อนนะครับ สร้าง DB ชื่อ "blogs"**
+**HINT: ไปสร้าง DB ใน postgres ก่อนนะครับ สร้าง DB ชื่อ "blogs"**
 
 ```python
 # Database setting
@@ -351,34 +351,41 @@ models.DecimalField(max_digits=5, decimal_places=2)
 - unique: ถ้ามีค่าเป็น True คือ ค่าใน column นี้ห้ามซ้ำ
 - null: ถ้ามีค่าเป็น True คือ column นี้มีค่าเป็น null ได้
 - blank: ถ้ามีค่าเป็น True คือ column นี้มีค่าเป็น "" หรือ empty string ได้
+
+```python
+from django.db import models
+
+class Student(models.Model):
+    code = models.CharField(max_length=20, primary_key=True)
+    full_name = models.CharField(max_length=200, null=False, blank=False, unique=True)
+```
+
 - default: กำหนดค่า default
 - choices: กำหนด ENUM ให้เลือกเฉพาะค่าที่กำหนด
 
 ```python
 from django.db import models
-
+from django.utils.translation import gettext_lazy as _
 
 class Student(models.Model):
-    FRESHMAN = "FR"
-    SOPHOMORE = "SO"
-    JUNIOR = "JR"
-    SENIOR = "SR"
-    GRADUATE = "GR"
-    YEAR_IN_SCHOOL_CHOICES = {
-        FRESHMAN: "Freshman",
-        SOPHOMORE: "Sophomore",
-        JUNIOR: "Junior",
-        SENIOR: "Senior",
-        GRADUATE: "Graduate",
-    }
+    class YearInSchool(models.TextChoices):
+        FRESHMAN = "FR", _("Freshman")
+        SOPHOMORE = "SO", _("Sophomore")
+        JUNIOR = "JR", _("Junior")
+        SENIOR = "SR", _("Senior")
+        GRADUATE = "GR", _("Graduate")
+
     year_in_school = models.CharField(
         max_length=2,
-        choices=YEAR_IN_SCHOOL_CHOICES,
-        default=FRESHMAN,
+        choices=YearInSchool,
+        default=YearInSchool.FRESHMAN,
     )
 
     def is_upperclass(self):
-        return self.year_in_school in {self.JUNIOR, self.SENIOR}
+        return self.year_in_school in {
+            self.YearInSchool.JUNIOR,
+            self.YearInSchool.SENIOR,
+        }
 ```
 
 - db_index: ถ้ามีค่าเป็น True คือจะสร้าง index ใน database สำหรับ column นี้

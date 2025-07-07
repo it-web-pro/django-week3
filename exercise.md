@@ -6,7 +6,7 @@
 2. สร้าง app ชื่อ shop และทำการตั้งค่าใน `settings.py`
 3. แก้ไขไฟล์ `models.py` สร้าง models ตาม ERD นี้
 
-![ERD-E-COMMERCE](/images/WEEK3-ERD(e-commerce).png)
+![ERD-E-COMMERCE](./images/ERD-week3-exercise.png)
 
 4. ทำการ makemigrations
 5. ทำการ migrate เพื่อสร้างตาราง
