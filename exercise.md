@@ -18,6 +18,14 @@
 - สร้าง models ที่มีความสัมพันธ์แบบ many-to-many ได้ครบถ้วนถูกต้อง (1 คะแนน)
 - กำหนด ENUM method ใน model PaymentMethod ได้ถูกต้อง (0.5 คะแนน)
 
+## Making Queries
+
+1. 
+2. 
+3. 
+4. 
+5. 
+
 ## Datetime & Timezone
 
 1. แปลง `datetime.now()` เป็น time zone "Asia/Bangkok" (0.2 คะแนน)
