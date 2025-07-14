@@ -36,6 +36,7 @@
     ramark: This is order for Darwin Nunez
 
 5. สร้าง record ข้อมูลของ Product และให้แสดงสินค้าที่มีราคามากกว่า 500 โดยมีข้อมูลดังนี้
+
     สินค้าชิ้นที่ 1
     ชื่อ USB-C Charger
     คำอธิบาย 20W fast charging USB-C adapter, compact and efficient.
