@@ -20,11 +20,39 @@
 
 ## Making Queries
 
-1. 
-2. 
-3. 
-4. 
-5. 
+1. สร้าง record ข้อมูลในตาราง Customer โดยมีข้อมูลดังนี้
+    ชื่อจริง: Django 
+    นามสกุล: Reinhardt 
+    อีเมล: dj_rein@mail.com 
+    ที่อยู่: Liberchies, Pont-à-Celles, Belgium
+
+2. อัพเดทข้อมูลของ Customer ที่ชื่อ Django ดังนี้
+    ชื่อจริง: Darwin
+    นามสกุล: Nunez
+    อีเมล: 660xxxxx@kmitl.ac.th
+
+4. สร้างข้อมูล Order ที่เป็นของ Customer ที่ชื่อ Darwin Nunez โดยจะมีข้อมูลดังนี้
+    order_date: 16 กรกฎาคม 2568
+    ramark: This is order for Darwin Nunez
+
+5. สร้าง record ข้อมูลของ Product และให้แสดงสินค้าที่มีราคามากกว่า 500 โดยมีข้อมูลดังนี้
+    สินค้าชิ้นที่ 1
+    ชื่อ USB-C Charger
+    คำอธิบาย 20W fast charging USB-C adapter, compact and efficient.
+    จำนวนคงเหลือ 100 
+    ราคา 299.50 
+    
+    สินค้าชิ้นที่ 2
+    ชื่อ USB-C Charger
+    คำอธิบาย Wireless earbuds with advanced noise cancelling technology.
+    จำนวนคงเหลือ 50
+    ราคา 1890.00
+    
+    สินค้าชิ้นที่ 3
+    ชื่อ Mechanical Keyboard
+    คำอธิบาย RGB mechanical keyboard designed for gamers with tactile feedback.
+    จำนวนคงเหลือ 25
+    ราคา 2499.99
 
 ## Datetime & Timezone
 
