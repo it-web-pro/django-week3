@@ -44,7 +44,7 @@
     ราคา 299.50 
     
     สินค้าชิ้นที่ 2
-    ชื่อ USB-C Charger
+    ชื่อ Noise Cancelling Earbuds
     คำอธิบาย Wireless earbuds with advanced noise cancelling technology.
     จำนวนคงเหลือ 50
     ราคา 1890.00
